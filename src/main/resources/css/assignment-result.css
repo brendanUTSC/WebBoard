@@ -1,0 +1,25 @@
+.result-label {
+	-fx-font-family: Verdana;
+	-fx-font-size: 14;
+}
+
+.correct-label {
+	-fx-text-fill: green;
+	-fx-font-weight: bold;
+}
+
+.incorrect-label {
+	-fx-text-fill: red;
+	-fx-font-weight: bold;
+}
+
+.score-label {
+	-fx-font-family: Verdana;
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+	-fx-padding: 0 10 0 0;
+}
+
+.hyper-link {
+	-fx-underline: true;
+}

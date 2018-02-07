@@ -1,0 +1,136 @@
+.root {
+	-fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: black;
+    -fx-opacity: 1;
+}
+
+.dialog-pane {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI";
+}
+
+.dialog-pane > *.label.content{
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: green;
+    -fx-opacity: 1;
+}
+
+.header {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: black;
+    -fx-opacity: 1;
+}
+
+.header2 {
+	-fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: black;
+    -fx-opacity: 1;
+}
+
+.header2-bold {
+	-fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-opacity: 1;
+}
+
+.windows-button {
+	-fx-background-color: 
+        #707070,
+        linear-gradient(#fcfcfc, #f3f3f3),
+        linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #cfcfcf 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+.dark-blue-button {
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+
+.dark-blue-button Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+
+.warning-label {
+	-fx-text-fill: #D9534F;
+	-fx-font-family: "Segou UI Semibold";
+}
+
+.clickable-label {
+	-fx-cursor: hand;
+	-fx-font-weight: bold;
+}
+
+.tool-bar {
+	-fx-base: rgb(39, 40, 40);
+	-light-black: rgb(74, 75, 78);
+    -dark-black: rgb(39, 40, 40);
+    -mid-gray: rgb(216, 222, 227);
+    
+    -fx-background-color:
+        linear-gradient(to bottom, derive(-fx-base,-30%), derive(-fx-base,-60%)),
+        linear-gradient(to bottom, -light-black 2%, -dark-black 98%);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: .9em 0.416667em .9em 0.416667em;
+    -fx-effect: dropshadow(two-pass-box,black,5,.2,0,0);
+    
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tool-bar .spacer {
+    -fx-padding: 0 5.417em 0 0;
+}
+
+.assignment-box {
+	-fx-padding: 10;
+}
+
+.assignment-box-hover {
+	-fx-padding: 10;
+	-fx-border-color: #898A8B;
+}
+
+.mark-label {
+	-fx-text-fill: #8B008B;
+	-fx-font-weight: bold;
+}
+
+.login-screen {
+}
+
+.login-label {
+	-fx-font-family: "Segoe UI";
+}
+
+.invalid-login-label {
+	-fx-text-fill: red;
+}
+
+.left-bar {
+	-fx-padding: 10 25 10 10;
+}
+
+.question-box {
+	-fx-padding: 40 20 20 0;
+}

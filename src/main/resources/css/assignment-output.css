@@ -1,0 +1,10 @@
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.content-pane {
+	-fx-padding: 10;
+	-fx-background: rgb(74, 75, 78);
+	-fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
