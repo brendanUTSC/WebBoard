@@ -1,0 +1,10 @@
+/bin
+/.classpath
+/.project
+/.settings
+/build/**
+!/build/build.xml
+!/build/package
+!/build/package/*
+!/build/package/windows
+!/build/package/windows/*
