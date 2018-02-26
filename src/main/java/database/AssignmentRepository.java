@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 import core.Assignment;
 import core.User;
@@ -108,15 +109,18 @@ public class AssignmentRepository extends Repository {
 		UserCourseRepository userCourseRepository = new UserCourseRepository();
 		List<String> courseIds = userCourseRepository.getCoursesForUser(user.getId());
 
-		int i = 0;
-		while (i < assignments.size()) {
-			if (!courseIds.contains(assignments.get(i).getCourseId())) {
-				assignments.remove(i);
-			} else {
-				i++;
-			}
-		}
-		return assignments;
+		return assignments.stream().filter(x -> courseIds.contains(x.getCourseId())).collect(Collectors.toList());
+	}
+
+	/**
+	 * Gets all the assignments for a course.
+	 * 
+	 * @param courseId
+	 *            The Course Id
+	 * @return List of Assignments for the course
+	 */
+	public List<Assignment> getAllAssignmentsForCourse(String courseId) {
+		return getAllAssignments(false).stream().filter(x -> x.getCourseId() == courseId).collect(Collectors.toList());
 	}
 
 	/**
